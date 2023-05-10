@@ -24,7 +24,7 @@ def winORlose(board,n):
         b=1
     if board[2]==board[5] and board[5]==board[8] and board[5]!="-":
         b=1
-    if board[0]==board[1] and board[1]==board[2] and board[11]!="-":
+    if board[0]==board[1] and board[1]==board[2] and board[1]!="-":
         b=1
     if board[3]==board[4] and board[4]==board[5] and board[4]!="-":
         b=1

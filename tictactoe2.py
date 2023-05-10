@@ -18,13 +18,17 @@ def printBoard(board):
             else:
                 ch="-"
             if j==2:
-                print(ch+"\n")
+                print(ch,end="\n")
             else:
-                print(ch+"|")
+                print(ch,end="|")
+    print()
                 
 
 def playerInput(board,n):
-    row,col=int(input("Enter row and col: "))
+    """row,col=int(input("Enter row and col: ")),int(input())"""
+    print("Enter row and col:")
+    row=int(input())
+    col=int(input())
     print()
     if row>=1 and row<=3 and col>=1 and col<=3 and board[row-1][col-1] == 0:
         board[row-1][col-1]=n
